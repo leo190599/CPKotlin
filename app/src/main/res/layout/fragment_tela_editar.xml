@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232323"
+    android:backgroundTint="#000000"
+    tools:context=".TelaEditar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="536dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginBottom="121dp"
+            android:background="#FEFEFE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/label_email_tela_editar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Email"
+                    android:textColor="#666666"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_tela_usuarios" />
+
+                <Button
+                    android:id="@+id/btn_alterar_tela_Editar"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="32dp"
+                    android:height="32dp"
+                    android:backgroundTint="#0066B4"
+                    android:text="alterar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_voltar_tela_editar"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="142dp"
+                    android:layout_marginBottom="32dp"
+                    android:height="32dp"
+                    android:backgroundTint="#C7C7C7"
+                    android:backgroundTintMode="add"
+                    android:text="Voltar"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_excluir_tela_editar"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="276dp"
+                    android:layout_marginBottom="32dp"
+                    android:height="32dp"
+                    android:backgroundTint="#BF0000"
+                    android:backgroundTintMode="add"
+                    android:text="Excluir"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView_tela_usuarios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="60dp"
+                    android:text="Editar"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="34sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/input_email_tela_editar"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="46dp"
+                    android:backgroundTint="#000000"
+                    android:ems="10"
+                    android:hint="email01@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label_email_tela_editar" />
+
+                <TextView
+                    android:id="@+id/label_senha_tela_editar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Senha"
+                    android:textColor="#666666"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/input_email_tela_editar" />
+
+                <EditText
+                    android:id="@+id/senha_tela_editar"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginEnd="46dp"
+                    android:backgroundTint="#000000"
+                    android:ems="10"
+                    android:hint="12345678"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textColorHint="#666666"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/label_senha_tela_editar" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxTelaEditar"
+                    android:layout_width="233dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="108dp"
+                    android:text="Habilitado a fazer login"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.258"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegador"
+    app:startDestination="@id/telaUsuarios">
+
+    <fragment
+        android:id="@+id/telaUsuarios"
+        android:name="com.example.cp.TelaUsuarios"
+        android:label="fragment_tela_usuarios"
+        tools:layout="@layout/fragment_tela_usuarios" >
+        <action
+            android:id="@+id/action_telaUsuarios_to_telaCadastrar"
+            app:destination="@id/telaCadastrar" />
+        <action
+            android:id="@+id/action_telaUsuarios_to_telaEditar"
+            app:destination="@id/telaEditar" />
+    </fragment>
+    <fragment
+        android:id="@+id/telaCadastrar"
+        android:name="com.example.cp.TelaCadastrar"
+        android:label="fragment_tela_cadastrar"
+        tools:layout="@layout/fragment_tela_cadastrar" >
+        <action
+            android:id="@+id/action_telaCadastrar_to_telaUsuarios"
+            app:destination="@id/telaUsuarios" />
+    </fragment>
+    <fragment
+        android:id="@+id/telaEditar"
+        android:name="com.example.cp.TelaEditar"
+        android:label="fragment_tela_editar"
+        tools:layout="@layout/fragment_tela_editar" >
+        <action
+            android:id="@+id/action_telaEditar_to_telaUsuarios"
+            app:destination="@id/telaUsuarios" />
+    </fragment>
+</navigation>
